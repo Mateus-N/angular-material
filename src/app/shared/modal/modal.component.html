@@ -1,0 +1,38 @@
+<section class="modal">
+  <h1 mat-dialog-title>Viajante</h1>
+  <div mat-dialog-content>
+    <div class="selecao-idade">
+      <ul>
+        <li><strong>Adultos</strong></li>
+        <li class="abrangecia-idade">(Acima de 12 anos)</li>
+        <li>
+          <app-modal-counts></app-modal-counts>
+        </li>
+      </ul>
+      <ul>
+        <li><strong>Crianças</strong></li>
+        <li class="abrangecia-idade">(Entre 2 e 11 anos)</li>
+        <li>
+          <app-modal-counts></app-modal-counts>
+        </li>
+      </ul>
+      <ul>
+        <li><strong>Bebês</strong></li>
+        <li class="abrangecia-idade">(Até 2 anos)</li>
+        <li>
+          <app-modal-counts></app-modal-counts>
+        </li>
+      </ul>
+    </div>
+    <div class="selecao-categoria">
+      <h2><strong>Categoria</strong></h2>
+      <mat-chip-listbox aria-label="Seleção de passagens">
+        <mat-chip-option selected>Executiva</mat-chip-option>
+        <mat-chip-option>Econômica</mat-chip-option>
+      </mat-chip-listbox>
+    </div>
+  </div>
+  <div mat-dialog-actions class="modal-actions">
+    <button mat-flat-button color="primary" mat-dialog-close>Buscar</button>
+  </div>
+</section>
